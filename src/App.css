@@ -3,8 +3,17 @@
     color: black;
 
 }
-.dark-theme {
+.black {
     background-color: black;
     color: white;
+    height: 100vh;
+}
+.container {
+    padding: 0 10px;
+    height: 100vh;
+}
 
+*{
+    margin: 0;
+    padding: 0;
 }
