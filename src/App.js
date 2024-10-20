@@ -1,14 +1,20 @@
 import React from "react";
-import { ThemeContextProvider } from "./components/provider/ThemeContextProvider";
-import ThemeChangeBtn from "./components/theme-btn/ThemeChangeBtn";
-import './App.css'; // Import the CSS file
+ import "./App.css"; // Import the CSS file
+import  { ThemeContextProvider } from "./components/provider/ThemeCOntext";
+  import { LangContextProvider } from "./components/provider/LangContext";
+import Container from "./components/Container";
 
 const App = () => {
+  // useEffect(()=>{
+  //   return localStorage.setItem("theme",theme)
+  // },[])
   return (
     <div className="app">
-      <ThemeContextProvider>
-        <ThemeChangeBtn />
-      </ThemeContextProvider>
+      <LangContextProvider>
+        <ThemeContextProvider>
+          <Container />
+        </ThemeContextProvider>
+      </LangContextProvider>
     </div>
   );
 };
