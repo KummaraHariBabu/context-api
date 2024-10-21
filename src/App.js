@@ -3,6 +3,7 @@ import React from "react";
 import  { ThemeContextProvider } from "./components/provider/ThemeCOntext";
   import { LangContextProvider } from "./components/provider/LangContext";
 import Container from "./components/Container";
+import UseReducerEx from "./useReducer/UseReducerEx";
 
 const App = () => {
   // useEffect(()=>{
@@ -15,6 +16,7 @@ const App = () => {
           <Container />
         </ThemeContextProvider>
       </LangContextProvider>
+      <UseReducerEx />
     </div>
   );
 };
