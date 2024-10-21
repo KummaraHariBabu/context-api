@@ -6,11 +6,11 @@
 .black {
     background-color: black;
     color: white;
-    height: 100vh;
+    max-height: 100vh;
 }
 .container {
     padding: 0 10px;
-    height: 100vh;
+    max-height: 100vh;
 }
 
 *{

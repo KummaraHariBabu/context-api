@@ -1,12 +1,10 @@
-import { createContext, useState } from "react";
+import { createContext } from "react";
+import { useLang } from "../hooks/useLang";
 
 const LangContext = createContext();
 export const LangContextProvider = ({ children }) => {
-  const [lang, setLang] = useState("en");
+    const {lang,changeLang} = useLang();
 
-  const changeLang = () => {
-    setLang((lang) => (lang === "en" ? "us" : "en"));
-  };
   return <LangContext.Provider value={{lang,changeLang}}>{children}</LangContext.Provider>;
 };
 
